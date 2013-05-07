@@ -7,9 +7,9 @@ task :install do
   switch_to_zsh
   install_janus
   replace_all = false
-  files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh]
-  files << "oh-my-zsh/custom/plugins/rbates"
-  files << "oh-my-zsh/custom/rbates.zsh-theme"
+  files = Dir['*'] - %w[Rakefile README.md LICENSE oh-my-zsh]
+  files << "oh-my-zsh/custom/plugins/elnicky"
+  files << "oh-my-zsh/custom/my_aliases.zsh"
   files.each do |file|
     system %Q{mkdir -p "$HOME/.#{File.dirname(file)}"} if file =~ /\//
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub(/\.erb$/, '')}"))
