@@ -1,0 +1,13 @@
+
+" Window movement
+nmap <silent> <D-S-RIGHT> <c-w>l
+nmap <silent> <D-S-Left> <c-w>h
+nmap <silent> <D-S-Up> <c-w>k
+nmap <silent> <D-S-Down> <c-w>j
+nmap <silent> } <c-w>l
+nmap <silent> { <c-w>h
+nmap <silent> V <c-w>v
+
+" color scheme
+color desert
+
