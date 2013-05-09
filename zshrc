@@ -11,6 +11,9 @@ unsetopt correct_all
 
 source $ZSH/oh-my-zsh.sh
 
+# stop searching my hosts
+zstyle ':completion:*' hosts off
+
 # Load RVM into a shell session *as a function*
 if [ -d ${HOME}/.rvm ]; then
   [[ -s "${HOME}/.rvm/scripts/rvm" ]] && source "${HOME}/.rvm/scripts/rvm"
