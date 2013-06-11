@@ -11,8 +11,8 @@ I am running on Mac OS X, but it will likely work on Linux as well.
 Run the following commands in your terminal. It will prompt you before it does anything destructive. Check out the [Rakefile](https://github.com/ryanb/dotfiles/blob/custom-bash-zsh/Rakefile) to see exactly what it does.
 
 ```terminal
-git clone git://github.com/ryanb/dotfiles ~/.dotfiles
-cd ~/.dotfiles
+git clone git://github.com/telnicky/dots
+cd ~/dots
 rake install
 ```
 
@@ -34,7 +34,7 @@ unlink ~/.vim
 unlink ~/.vimrc
 rm ~/.zshrc # careful here
 rm ~/.gitconfig
-rm -rf ~/.dotfiles
+rm -rf ~/.dots
 rm -rf ~/.oh-my-zsh
 chsh -s /bin/bash # change back to Bash if you want
 ```

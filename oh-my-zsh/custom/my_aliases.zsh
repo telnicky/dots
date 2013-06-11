@@ -20,6 +20,10 @@ alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
 
 # git aliases
 alias g="git"
+alias ga="git add"
+alias gc="git commit -m"
+alias gd="git diff --color"
+alias gp="git push"
 alias gs="g status"
 alias pop="g stash pop"
 alias stash="g stash"
