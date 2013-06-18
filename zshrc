@@ -7,7 +7,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # no more auto correct
-unsetopt correct_all
+unsetopt correct
 
 source $ZSH/oh-my-zsh.sh
 
