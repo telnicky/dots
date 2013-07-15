@@ -31,7 +31,7 @@ alias stash="g stash"
 
 # rails aliases
 alias railz='PB_CLIENT_TYPE=Zmq PB_IGNORE_DEPRECATIONS=1 bx rails s'
-alias specz='PB_CLIENT_TYPE=Zmq bx rake spec'
+alias specs='bx rake spec RAILS_ENV=test'
 alias pz='PB_CLIENT_TYPE=Zmq'
 
 
