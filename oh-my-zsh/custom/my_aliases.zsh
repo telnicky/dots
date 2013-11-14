@@ -33,7 +33,7 @@ alias stash="g stash"
 alias railz='PB_CLIENT_TYPE=Zmq PB_IGNORE_DEPRECATIONS=1 bx rails s'
 alias specs='bx rake spec RAILS_ENV=test'
 alias pz='PB_CLIENT_TYPE=Zmq'
-
+alias stfu='PB_IGNORE_DEPRECATIONS=1'
 
 # misc
 alias path='echo $PATH'
