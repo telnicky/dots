@@ -8,6 +8,7 @@
 	status = auto
 	branch = auto
 [core]
-	excludesfile = <%= ENV['HOME'] %>/.gitignore
+  excludesfile = <%= ENV['HOME'] %>/.gitignore
+  editor = "vim"
 [github]
 	user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
