@@ -3,8 +3,8 @@ ZSH_THEME="superjarin"
 plugins=(elnicky)
 
 export PATH="/usr/local/bin:$PATH"
-# Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export NDK_ROOT="$HOME/Code/android-ndk-r9c"
+export ANDROIDPP_ROOT="$HOME/Code/Androidpp"
 
 # Load RBenv
 export RBENV_ROOT=/usr/local/var/rbenv
@@ -17,5 +17,4 @@ unsetopt correct_all
 
 # stop searching my hosts
 zstyle ':completion:*' hosts off
-
 
