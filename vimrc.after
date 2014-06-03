@@ -1,2 +1,4 @@
 se t_Co=256
 color molokai
+hi ColorColumn guibg=#040404 ctermbg=0
+se cc=80
