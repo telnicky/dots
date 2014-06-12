@@ -1,4 +1,4 @@
 se t_Co=256
-color molokai
-hi ColorColumn guibg=#040404 ctermbg=0
+color tomorrow
+hi ColorColumn guibg=#d4d4d4 ctermbg=15
 se cc=80

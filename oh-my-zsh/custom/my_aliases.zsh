@@ -21,22 +21,30 @@ alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
 # git aliases
 alias g="git"
 alias ga="git add"
+alias gca="git commit --amend"
 alias gcm="git commit -m"
+alias gco="git checkout"
 alias gcv="git commit -v"
 alias gd="git diff --color"
 alias gp="git pull"
 alias gpsh="git push"
+alias gpsh="git push origin HEAD:refs/for/master"
 alias gs="g status"
 alias pop="g stash pop"
 alias stash="g stash"
 
 # rails aliases
-alias railz='PB_CLIENT_TYPE=Zmq PB_IGNORE_DEPRECATIONS=1 bx rails s'
 alias specs='bx rake spec RAILS_ENV=test'
-alias pz='PB_CLIENT_TYPE=Zmq'
+alias retest='RAILS_ENV=test'
+alias brake='bin/rake'
+alias bspec='bin/rspec'
+
+# Protobuf
+alias railz='PB_CLIENT_TYPEZmq PB_IGNORE_DEPRECATIONS=1 bx rails s'
 alias stfu='PB_IGNORE_DEPRECATIONS=1'
+alias pz='PB_CLIENT_TYPE=Zmq'
 
 # misc
 alias path='echo $PATH'
-alias reload='. ~/.bash_profile'
+alias reload='source ~/.zshrc'
 
