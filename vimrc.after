@@ -1,4 +1,3 @@
 se t_Co=256
-color tomorrow
-hi ColorColumn guibg=#d4d4d4 ctermbg=15
+color pyte
 se cc=80
