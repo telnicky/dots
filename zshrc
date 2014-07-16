@@ -2,7 +2,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="superjarin"
 plugins=(elnicky)
 
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export NDK_ROOT="$HOME/Code/android-ndk-r9c"
 export ANDROIDPP_ROOT="$HOME/Code/Androidpp"
 
