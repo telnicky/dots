@@ -6,8 +6,9 @@ task :install do
   install_oh_my_zsh
   switch_to_zsh
   install_janus
+  #vundle
   replace_all = false
-  files = Dir['*'] - %w[Rakefile README.md LICENSE oh-my-zsh]
+  files = Dir['*'] - %w[Rakefile README.md LICENSE oh-my-zsh bundle]
   files << "oh-my-zsh/custom/plugins/elnicky"
   files << "oh-my-zsh/custom/my_aliases.zsh"
   files.each do |file|
@@ -108,4 +109,12 @@ def install_janus
   end
 end
 
-
+def vundle
+  FileUtils.cp_r("./bundle", "#{ ENV.fetch("HOME") }/.vim")
+  vimrc_path = "#{ ENV.fetch("HOME") }/.vimrc"
+  current_vimrc = File.open(vimrc_path).read
+  vundle = File.open("./vundle").read
+  File.open(vimrc_path, 'w') do |file|
+    file.puts vundle + current_vimrc
+  end
+end

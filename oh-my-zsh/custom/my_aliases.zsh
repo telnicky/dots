@@ -30,6 +30,7 @@ alias gp="git pull"
 alias gpsh="git push"
 alias gpsh="git push origin HEAD:refs/for/master"
 alias gs="g status"
+alias gb="g branch"
 alias pop="g stash pop"
 alias stash="g stash"
 
